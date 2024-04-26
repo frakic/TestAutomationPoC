@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "author": "Filip Rakić",
   "scripts": {
-    "test": "test"
+    "test": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^13.8.1",
+    "typescript": "^5.4.5",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0"
   }
 }
