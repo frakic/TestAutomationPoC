@@ -15,7 +15,8 @@ export default defineConfig({
         lastName: 'User',
         apiUrl: 'https://jsonplaceholder.typicode.com',
       } as EnvironmentVariables),
-        (config.specPattern = 'cypress/tests/**/*.cy.ts')
+        (config.specPattern = 'cypress/tests/**/*.cy.ts'),
+        (config.video = true)
       return config
     },
   },

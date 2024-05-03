@@ -10,6 +10,7 @@ export class HomePage {
 
     placeNameField.clear()
     placeNameField.type(placeName)
+    placeNameField.should('have.value', placeName)
 
     return this
   }
