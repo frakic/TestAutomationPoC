@@ -6,8 +6,9 @@
     "test": "cypress open"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "cypress": "^13.8.1",
-    "typescript": "^5.4.5",
-    "@trivago/prettier-plugin-sort-imports": "^4.3.0"
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "typescript": "^5.4.5"
   }
 }

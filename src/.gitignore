@@ -132,3 +132,4 @@ dist
 #cypress
 cypress/screenshots
 cypress/videos
+cypress/reports
