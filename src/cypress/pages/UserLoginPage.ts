@@ -1,8 +1,8 @@
-import { LoginOptions } from 'cypress/models/LoginOptions'
+import { LoginOptions } from 'models/LoginOptions'
 
 export class UserLoginPage {
   visit() {
-    cy.visit('/user/login')
+    cy.visit('/user/login').title().should('eq', 'User Login')
   }
 
   fillEmail(email: string) {
