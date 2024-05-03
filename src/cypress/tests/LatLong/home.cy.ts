@@ -13,17 +13,15 @@ describe('Homepage', () => {
   })
 
   it('finds coordinates for existing locations', () => {
-    cy.fixture('places')
-      .as('places.json')
-      .then((places) => {
-        places.forEach((place: Place) => {
-          homePage.fillPlaceName(place.name)
-          homePage.clickFindButton()
-          homePage
-            .getLatLngSpanText()
-            .should('eq', `(${place.latitude}, ${place.longitude})`)
-        })
+    cy.fixture('places').then((places) => {
+      places.forEach((place: Place) => {
+        homePage.fillPlaceName(place.name)
+        homePage.clickFindButton()
+        homePage
+          .getLatLngSpanText()
+          .should('eq', `(${place.latitude}, ${place.longitude})`)
       })
+    })
   })
 
   it('displays an error message when no place is found', () => {
