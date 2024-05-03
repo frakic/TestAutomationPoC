@@ -4,7 +4,10 @@
     "lib": ["esnext", "dom"],
     "types": ["cypress", "node"],
     "moduleResolution": "node",
-    "baseUrl": "."
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "cypress"
   },
   "include": ["**/*.ts"]
 }
